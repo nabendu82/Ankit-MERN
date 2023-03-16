@@ -14,10 +14,16 @@ h1{
     color: rgb(3, 2, 72);
 }
 
-h3{
+.container h3{
     background-color: aquamarine;
     color: darkmagenta;
     padding: 1%;
+    font-weight:900;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.8em;
 }
 
 /* div{
@@ -55,4 +61,96 @@ p{
     /* padding: 15px 20px 15px 20px; */
 
     padding: 15px 20px;
+}
+
+.box-1 h3{
+    background-color: rgb(88, 3, 76);
+    color: rgb(194, 206, 19);
+    padding: 10px;
+}
+
+.categories{
+    border: 1px solid darkgray;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: none;
+}
+
+.categories a{
+    text-decoration: none;
+    color: black;
+}
+
+.categories a:hover{
+    color: red;
+}
+
+.categories li{
+    padding: 6px 0;
+    border-bottom: 1px dotted darkblue;
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 10px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form #name, .my-form #email, .my-form #message{
+    width: 100%;
+    padding: 8px;
+}
+
+.btn{
+    padding: 10px 16px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background-color: darkmagenta;
+    cursor: pointer;
+}
+
+.block{
+    float: left;
+    width: 33.33%;
+}
+
+#main__block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+}
+
+#side__bar{
+    float: right;
+    width: 30%;
+    padding: 15px;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    clear: both;
 }
