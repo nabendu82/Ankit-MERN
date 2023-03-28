@@ -104,3 +104,62 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+.button_1{
+    padding: 8px 14px;
+    border: 0;
+    background-color: #ffc600;
+    border-radius: 5px;
+}
+
+@media(max-width: 768px){
+    header #branding, header nav, #boxes .box, aside#sidebar, article#main-col{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcase h1{
+        font-size: 25px;
+    }
+
+    #showcase p{
+        font-size: 18px;
+    }
+
+    aside#sidebar{
+        margin-bottom: 120px;
+    }
+}
