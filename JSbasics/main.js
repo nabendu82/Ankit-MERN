@@ -76,16 +76,55 @@
 // console.log(str.includes('Cobol'));
 
 //Array
-const lang = ['JavaScript', 'Java', 'C++', 'Golang', 'Kotlin', 5, true];
-console.log(lang[2]);
+// const lang = ['JavaScript', 'Java', 'C++', 'Golang', 'Kotlin', 5, true];
+// console.log(lang[2]);
 
-lang.pop();
-lang.pop();
-console.log(lang);
+// lang.pop();
+// lang.pop();
+// console.log(lang);
 
-lang.push('Pascal');
-lang.unshift('Flutter');
-console.log(lang);
+// lang.push('Pascal');
+// lang.unshift('Flutter');
+// console.log(lang);
 
-lang.shift();
-console.log(lang);
+// lang.shift();
+// console.log(lang);
+
+//Array methods
+// console.log(Array.isArray(lang));
+// console.log(Array.isArray('JavaScript'));
+// console.log(lang.includes('Java'));
+// console.log(lang.includes('Cobol'));
+// console.log(lang.indexOf('Golang'));
+// console.log(lang.indexOf('Cobol'));
+// console.log(lang.join());
+// console.log(lang.join(''));
+// console.log(lang.join('-'));
+
+//Objects
+const person = {
+    firstName: 'Nabendu',
+    'last Name': 'Biswas',
+    age: 40,
+    isDeveloper: true,
+    hobbies: ['coding', 'teaching', 'youtubing'],
+    address: {
+        street: "Victor Plains",
+        suite: "Suite 879",
+        city: "Wisokyburgh",
+        zipcode: "90566-7771",
+        geo: {
+            "lat": "-43.9509",
+            "lng": "-34.4618"
+        }
+    }
+}
+
+console.log(person.firstName);
+console.log(person['last Name']);
+console.log(person.hobbies[1]);
+console.log(person.address.zipcode);
+console.log(person.address.geo.lng);
+
+console.log(Object.keys(person));
+console.log(Object.values(person));
