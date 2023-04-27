@@ -102,29 +102,111 @@
 // console.log(lang.join('-'));
 
 //Objects
-const person = {
-    firstName: 'Nabendu',
-    'last Name': 'Biswas',
-    age: 40,
-    isDeveloper: true,
-    hobbies: ['coding', 'teaching', 'youtubing'],
-    address: {
-        street: "Victor Plains",
-        suite: "Suite 879",
-        city: "Wisokyburgh",
-        zipcode: "90566-7771",
-        geo: {
-            "lat": "-43.9509",
-            "lng": "-34.4618"
-        }
-    }
+// const person = {
+//     firstName: 'Nabendu',
+//     'last Name': 'Biswas',
+//     age: 40,
+//     isDeveloper: true,
+//     hobbies: ['coding', 'teaching', 'youtubing'],
+//     address: {
+//         street: "Victor Plains",
+//         suite: "Suite 879",
+//         city: "Wisokyburgh",
+//         zipcode: "90566-7771",
+//         geo: {
+//             "lat": "-43.9509",
+//             "lng": "-34.4618"
+//         }
+//     }
+// }
+
+// console.log(person.firstName);
+// console.log(person['last Name']);
+// console.log(person.hobbies[1]);
+// console.log(person.address.zipcode);
+// console.log(person.address.geo.lng);
+
+// console.log(Object.keys(person));
+// console.log(Object.values(person));
+
+//Loops
+//Traditional for loop
+// for(let i=0; i<=10; i++){
+//     console.log(`Loop Number - ${i}`)
+// }
+
+//While loop
+// let i=0;
+// while(i<=10){
+//     console.log(`Loop Number - ${i}`)
+//     i++
+// }
+
+//do-while loop
+// let i=0;
+// do {
+//     console.log(`Loop Number - ${i}`)
+//     i+=11; //i = i+ 11
+// }while(i<=10);
+
+//Reverse for loop
+// for(let i=10; i>0; i--){
+//     console.log(`Loop Number - ${i}`)
+// }
+
+//Arrays of object
+const lang = [
+    {id: 1, name: 'Pascal', year: 1970},
+    {id: 2, name: 'C', year: 1972},
+    {id: 3, name: 'C++', year: 1985},
+    {id: 4, name: 'Java', year: 1994},
+    {id: 5, name: 'JavaScript', year: 1995},
+    {id: 6, name: 'Kotlin', year: 2011}
+];
+
+//Traditional for loop
+// for(let i=0; i<lang.length; i++){
+//     console.log(lang[i].id)
+// }
+
+//for..of loop
+// for(let l of lang){
+//     console.log(l.name)
+// }
+
+//forEach loop
+// lang.forEach(item => console.log(item.year));
+
+//Conditionals
+//if statement
+// const a = 10
+// if(a > 5){
+//     console.log('a is greater then 5')
+// }
+
+const x = '10';
+if(x == 10){//10 == 10
+    console.log('x is 10');
 }
 
-console.log(person.firstName);
-console.log(person['last Name']);
-console.log(person.hobbies[1]);
-console.log(person.address.zipcode);
-console.log(person.address.geo.lng);
+//if-else statement
+const y = '20';
+if(y === 20){
+    console.log('y is 20')
+} else {
+    console.log('y is string 20')
+}
 
-console.log(Object.keys(person));
-console.log(Object.values(person));
+//if-else if-else statement
+const z = 79;
+if(z>100){
+    console.log('z is greater then 100')
+} else if(z>80){
+    console.log('z is greater then 80')
+} else if(z>60){
+    console.log('z is greater then 60')
+} else if(z>40){
+    console.log('z is greater then 40')
+} else {
+    console.log('z is lesser then 40')
+}
