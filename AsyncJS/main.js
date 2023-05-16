@@ -44,6 +44,42 @@ function createPost(post){
     })
 }
 
-createPost({ title: 'Async Basics', summary: 'This post contains the basics of Async'})
-            .then(getPosts)
-            .catch(err => document.body.innerHTML = `${err}`)
+//Promises - then..catch
+// createPost({ title: 'Async Basics', summary: 'This post contains the basics of Async'})
+//             .then(getPosts)
+//             .catch(err => document.body.innerHTML = `${err}`)
+
+//Promises - Async-Await
+// async function init(){
+//     try {
+//         await createPost({ title: 'Async Basics', summary: 'This post contains the basics of Async'})
+//         getPosts()
+//     } catch (err) {
+//         document.body.innerHTML = `${err}`
+//     }
+// }
+
+// init()
+
+//Async-await Fetch
+// async function fetchPosts() {
+//         const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         const posts = await res.json();
+//         let output = '';
+//         posts.forEach(post => output += `<h3>${post.title}</h3><p>${post.body}</p>`)
+//         document.body.innerHTML = output
+// }
+
+// fetchPosts()
+
+//Async-await then..catch
+fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(res => res.json())
+    .then(posts => {
+        let output = '';
+        posts.forEach(post => output += `<h3>${post.title}</h3><p>${post.body}</p>`)
+        document.body.innerHTML = output     
+    })
+    .catch(err => document.body.innerHTML = `${err}`)
+
+  
