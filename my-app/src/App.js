@@ -1,10 +1,10 @@
 import './App.css';
-import PostList from './components/PostList';
+import LifecycleMethods from './components/LifecycleMethods';
 
 function App() {
   return (
     <div className="App">
-      <PostList />
+      <LifecycleMethods />
     </div>
   );
 }
