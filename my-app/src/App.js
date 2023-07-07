@@ -1,10 +1,15 @@
 import './App.css';
-import LifecycleMethods from './components/LifecycleMethods';
+import PostForm from './components/PostForm';
+// import GrandParent from './components/GrandParent';
+// import { UserProvider } from './components/userContext';
 
 function App() {
   return (
     <div className="App">
-      <LifecycleMethods />
+      {/* <UserProvider value="Nabendu">
+        <GrandParent />
+      </UserProvider> */}
+      <PostForm />
     </div>
   );
 }
